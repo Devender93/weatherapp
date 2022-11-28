@@ -17,7 +17,7 @@ function App() {
   const searchWeatherHandler= () => {
     if(search !== ''){
       axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=ef8a4cb28b97e9a17684fbb77c9409be&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=ef8a4cb28b97e9a17684fbb77c9409be&units=metric`
       )
       .then(
         (response)=>{
